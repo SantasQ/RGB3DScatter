@@ -15,7 +15,7 @@ fetch("All_Images_RGB_Data.csv")
         for (let i = 1; i < lines.length; i++) {
             const row = lines[i].split(",");
             if (row.length < 7) continue;
-            if (row[6] === imageName) {
+            if (row[6].trim() === imageName.trim()) {
                 const r = parseInt(row[3]);
                 const g = parseInt(row[4]);
                 const b = parseInt(row[5]);
