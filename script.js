@@ -32,7 +32,7 @@ fetch("All_Images_RGB_Data.csv")
                     x: r,
                     y: g,
                     z: b,
-                    style: `rgb(${r},${g},${b})`
+                    color: `rgb(${r},${g},${b})`
                 });
                 foundCount++;
             }
