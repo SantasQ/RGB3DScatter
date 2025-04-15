@@ -1,19 +1,21 @@
-
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>RGB 3D Scatter Plot</title>
-
-  <!-- vis.js を先に読み込む！ -->
-  <script src="https://unpkg.com/vis-graph3d@latest/standalone/umd/vis-graph3d.min.js"></script>
-
-  <!-- あなたのコード -->
+  <!-- ✅ 安定版CDN -->
+  <script src="https://unpkg.com/vis-graph3d@latest/dist/vis-graph3d.min.js"></script>
   <script src="script.js" defer></script>
-
   <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: sans-serif; text-align: center; background: #f4f4f4; }
+    #visualization { width: 90vw; height: 80vh; margin: auto; }
+  </style>
 </head>
 <body>
-  <h2>RGB 3D Scatter Plot (from image)</h2>
-  <div id="visualization"></div>
+
+<h2>RGB 3D Scatter Plot (from image)</h2>
+<div id="visualization"></div>
+
 </body>
 </html>

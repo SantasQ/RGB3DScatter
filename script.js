@@ -32,7 +32,7 @@ fetch("All_Images_RGB_Data.csv")
                     x: r,
                     y: g,
                     z: b,
-                    style: `rgb(${r},${g},${b})` // ← ここ！
+                    color: `rgb(${r},${g},${b})`
                 });
                 foundCount++;
             }
@@ -50,7 +50,7 @@ fetch("All_Images_RGB_Data.csv")
         new vis.Graph3d(container, graphData, {
             width: "800px",
             height: "600px",
-            style: "dot-color", // ← これで style: rgb() が有効になる！
+            style: "dot-color", // ← これが必要だった！！
             showPerspective: true,
             showGrid: true,
             keepAspectRatio: true,
