@@ -3,8 +3,13 @@
 <html>
 <head>
   <title>RGB 3D Scatter Plot</title>
-  <script type="text/javascript" src="vis.js"></script>
-  <script type="text/javascript" src="script.js" defer></script>
+
+  <!-- vis.js を一番先に読み込む！！ -->
+  <script src="https://unpkg.com/vis-graph3d@latest/standalone/umd/vis-graph3d.min.js"></script>
+
+  <!-- あなたのスクリプト（defer付きでOK） -->
+  <script src="script.js" defer></script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
