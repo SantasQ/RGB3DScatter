@@ -50,7 +50,7 @@ fetch("All_Images_RGB_Data.csv")
         new vis.Graph3d(container, graphData, {
             width: "800px",
             height: "600px",
-            style: "dot-color",
+
             showPerspective: true,
             showGrid: true,
             keepAspectRatio: true,
