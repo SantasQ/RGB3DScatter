@@ -50,7 +50,7 @@ fetch("All_Images_RGB_Data.csv")
         new vis.Graph3d(container, graphData, {
             width: "800px",
             height: "600px",
-            style: "dot-color", // ← これが必要だった！！
+            style: "dot", // ← color指定が効く安定構成
             showPerspective: true,
             showGrid: true,
             keepAspectRatio: true,
